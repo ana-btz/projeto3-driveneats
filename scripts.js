@@ -11,6 +11,8 @@ const sobremesa1 = document.querySelector(".sobremesa1");
 const sobremesa2 = document.querySelector(".sobremesa2");
 const sobremesa3 = document.querySelector(".sobremesa3");
 
+let botao = document.querySelector(".botao");
+
 // funcao fechar pedido
 function fecharPedido() {
     const p1b = prato1.classList.contains("bordaPrato");
@@ -24,8 +26,6 @@ function fecharPedido() {
     const s1b = sobremesa1.classList.contains("bordaSobremesa");
     const s2b = sobremesa2.classList.contains("bordaSobremesa");
     const s3b = sobremesa3.classList.contains("bordaSobremesa");
-
-    const botao = document.querySelector(".botao");
 
     if ((p1b || p2b || p3b) && (b1b || b2b || b3b) && (s1b || s2b || s3b)) {
         botao.innerHTML = "Fechar Pedido";
@@ -69,5 +69,15 @@ function toggleSelectionSobremesa(sobremesaSelecionada) {
     sobremesaSelecionada.classList.add("bordaSobremesa");
 
     fecharPedido();
+}
+
+// funcao que ativa o botao
+function ativaBotao() {
+    let texto = "Olá, gostaria de fazer o pedido:\n- Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: Pudim\n Total: R$ 27.70"
+    
+    if (botao.classList.contains("novoBotao")) {
+        alert("Oi");
+        window.location.href = "https://api.whatsapp.com/send?text=" + encodeURIComponent(texto);
+    }
 }
 
