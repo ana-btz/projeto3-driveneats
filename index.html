@@ -34,7 +34,10 @@
         <div class="categoria">
 
             <div class="container-opcoes">
-                <div class="opcao">
+                <div class="opcao prato1" onclick="toggleSelectionPrato(this)">
+
+                    <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
+
                     <div>
                         <img src="./images/frango_yin_yang 1.png">
                         <p class="nome">Frango Yin Yang</p>
@@ -44,7 +47,8 @@
 
                 </div>
 
-                <div class="opcao">
+                <div class="opcao prato2" onclick="toggleSelectionPrato(this)">
+                    <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     <div>
                         <img src="./images/frango_yin_yang 1.png">
                         <p class="nome">Frango Yin Yang</p>
@@ -54,7 +58,8 @@
 
                 </div>
 
-                <div class="opcao">
+                <div class="opcao prato3" onclick="toggleSelectionPrato(this)">
+                    <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     <div>
                         <img src="./images/frango_yin_yang 1.png">
                         <p class="nome">Frango Yin Yang</p>
@@ -72,7 +77,7 @@
         <div class="categoria">
 
             <div class="container-opcoes">
-                <div class="opcao">
+                <div class="opcao bebida1" onclick="toggleSelectionBebida(this)">
                     <div>
                         <img src="./images/coquinha_gelada 1.png">
                         <p class="nome">coquinha gelada</p>
@@ -81,7 +86,7 @@
                     </div>
                 </div>
 
-                <div class="opcao">
+                <div class="opcao bebida2" onclick="toggleSelectionBebida(this)">
                     <div>
                         <img src="./images/coquinha_gelada 1.png">
                         <p class="nome">coquinha gelada</p>
@@ -90,7 +95,7 @@
                     </div>
                 </div>
 
-                <div class="opcao">
+                <div class="opcao bebida3" onclick="toggleSelectionBebida(this)">
                     <div>
                         <img src="./images/coquinha_gelada 1.png">
                         <p class="nome">coquinha gelada</p>
@@ -106,7 +111,7 @@
         <div class="categoria">
 
             <div class="container-opcoes">
-                <div class="opcao">
+                <div class="opcao sobremesa1" onclick="toggleSelectionSobremesa(this)">
                     <div>
                         <img src="./images/pudim 1.png">
                         <p class="nome">Pudim</p>
@@ -115,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="opcao">
+                <div class="opcao sobremesa2" onclick="toggleSelectionSobremesa(this)">
                     <div>
                         <img src="./images/pudim 1.png">
                         <p class="nome">Pudim</p>
@@ -124,7 +129,7 @@
                     </div>
                 </div>
 
-                <div class="opcao">
+                <div class="opcao sobremesa3" onclick="toggleSelectionSobremesa(this)">
                     <div>
                         <img src="./images/pudim 1.png">
                         <p class="nome">Pudim</p>
@@ -139,13 +144,18 @@
 
     <!-- botao fechar pedido -->
     <div class="container-botao">
-        <div class="botao">
+        <div class="botao" onclick="fecharPedido(this)">
 
             <p class="botao">Selecione os 3 itens <br> para fechar o pedido</p>
 
         </div>
 
     </div>
+
+    <script src="scripts.js"></script>
+
+    <!-- esse script permite o uso da tag ion-icon -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>

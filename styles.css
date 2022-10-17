@@ -1,11 +1,12 @@
 body {
     background-color: #EEEEEE;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 .topo {
     background-color: #CF2B2B;
-    box-shadow: 0 5px 5px rgb(182, 182, 182);
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.25);
     color: #FFFFFF;
     width: 414px;
     height: 92px;
@@ -15,6 +16,8 @@ body {
     justify-content: center;
     position: fixed;
     top: 0;
+
+    z-index: 100;
 }
 
 .topo h1 {
@@ -67,15 +70,17 @@ body {
 .opcao {
     background-color: #FFFFFF;
     width: 172px;
-    /* height: 216px; */
     margin-right: 16px;
     padding: 18px 14px 13px 14px;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    box-sizing: border-box;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 .opcao div {
@@ -137,4 +142,34 @@ img {
     font-weight: 400;
     line-height: 23px;
     text-align: center;
+}
+
+/* executado com o javascript */
+
+.bordaPrato {
+    border: 5px solid #32B72F;
+}
+
+.bordaBebida {
+    border: 5px solid #32B72F;
+}
+
+.bordaSobremesa {
+    border: 5px solid #32B72F;
+}
+
+ion-icon {
+    color: #32B72F;
+    position: absolute;
+    bottom: 16px;
+    right: 13px;
+}
+
+.escondido {
+    display: none;
+}
+
+.novoBotao {
+    background-color: #32B72F;
+    color: white;
 }
