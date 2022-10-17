@@ -78,5 +78,6 @@ function ativaBotao() {
     if (botao.classList.contains("novoBotao")) {
         window.location.href = "https://api.whatsapp.com/send?text=" + encodeURIComponent(texto);
     }
+// teste do github
 }
 
