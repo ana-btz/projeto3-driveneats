@@ -76,7 +76,6 @@ function ativaBotao() {
     let texto = "Olá, gostaria de fazer o pedido:\n- Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: Pudim\n Total: R$ 27.70"
     
     if (botao.classList.contains("novoBotao")) {
-        alert("Oi");
         window.location.href = "https://api.whatsapp.com/send?text=" + encodeURIComponent(texto);
     }
 }
